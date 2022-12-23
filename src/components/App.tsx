@@ -5,8 +5,8 @@ function App() {
     let [name, setName] = useState('Kamen Rider Faiz');
 
     return (
-        <div className="flex flex-col items-center">
-            <h1 className="text-yellow-500">Hello World</h1>
+        <div className="flex h-screen flex-col items-center justify-center">
+            <h1 className="text-4xl text-yellow-500">Hello World</h1>
             <button onClick={() => setCount((count) => count + 1)}>
                 count is {count}
             </button>
@@ -18,7 +18,7 @@ function App() {
                         setName(event.target.value);
                     }}
                 />
-                <h1 className="text-4xl">{name}</h1>
+                <h1 className="min-h-[50px] text-4xl">{name}</h1>
             </div>
         </div>
     );
