@@ -5,15 +5,6 @@ import { expect } from 'vitest';
 import App from './App';
 
 describe('App', () => {
-    it('Renders "Vite + React" Header', () => {
-        render(<App />);
-        expect(
-            screen.getByRole('heading', {
-                level: 1,
-            })
-        ).toHaveTextContent('Vite + React');
-    });
-
     it('should increment count', async () => {
         const user = userEvent.setup();
         render(<App />);
